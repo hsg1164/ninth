@@ -1,8 +1,8 @@
 import React, { useState, useEffect, useMemo } from 'react';
-import { schedulesByDivision, arabicDayNames, divisions, periodTimes, dayNames } from '../data/schedule';
-import { subjectDetailsMap } from '../data/subjects';
-import { ScheduleEntry } from '../types';
-import { ExternalLinkIcon } from './icons';
+import { schedulesByDivision, arabicDayNames, divisions, periodTimes, dayNames } from '../data/schedule.ts';
+import { subjectDetailsMap } from '../data/subjects.ts';
+import { ScheduleEntry } from '../types.ts';
+import { ExternalLinkIcon } from './icons.tsx';
 
 // Utility function to convert "HH:mm" to 12-hour format "h:mm مساءً/صباحًا"
 const convertTo12HourFormat = (time24: string | undefined): string => {

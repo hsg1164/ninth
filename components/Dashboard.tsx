@@ -1,7 +1,7 @@
 import React from 'react';
-import TodayView from './TodayView';
-import { View } from '../App';
-import { CalendarIcon, CollectionIcon } from './icons';
+import TodayView from './TodayView.tsx';
+import { View } from '../App.tsx';
+import { CalendarIcon, CollectionIcon } from './icons.tsx';
 
 interface DashboardProps {
   setCurrentView: (view: View) => void;
@@ -46,14 +46,7 @@ const Dashboard: React.FC<DashboardProps> = ({ setCurrentView }) => {
 
       <div className="animate-fadeInUp" style={{ animationDelay: '200ms' }}>
         <h2 className="text-2xl sm:text-3xl font-bold mb-6">روابط سريعة</h2>
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-            <QuickLink 
-              title="المساعد الذكي"
-              subtitle="اطرح أي سؤال دراسي"
-              icon={<i className="fa-solid fa-robot text-4xl text-teal-500 w-10 text-center"></i>}
-              color="border-teal-500"
-              onClick={() => setCurrentView('assistant')}
-            />
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
             <QuickLink 
               title="الجدول الدراسي"
               subtitle="عرض الجدول الأسبوعي الكامل"

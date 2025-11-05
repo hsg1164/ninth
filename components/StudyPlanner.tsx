@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Task } from '../types';
+import { Task } from '../types.ts';
 
 const StudyPlanner: React.FC = () => {
   const [tasks, setTasks] = useState<Task[]>([

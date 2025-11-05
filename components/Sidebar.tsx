@@ -1,6 +1,6 @@
 import React from 'react';
-import { HomeIcon, CalendarIcon, CollectionIcon, WhatsappIcon, SupportIcon } from './icons';
-import { View } from '../App';
+import { HomeIcon, CalendarIcon, CollectionIcon, WhatsappIcon, SupportIcon } from './icons.tsx';
+import { View } from '../App.tsx';
 
 interface SidebarProps {
   currentView: View;
@@ -32,7 +32,6 @@ const Sidebar: React.FC<SidebarProps> = ({ currentView, setCurrentView, isOpen, 
   const navItems = [
     { id: 'dashboard', label: 'الرئيسية', icon: <HomeIcon className="h-6 w-6" /> },
     { id: 'schedule', label: 'الجدول الدراسي', icon: <CalendarIcon className="h-6 w-6" /> },
-    { id: 'assistant', label: 'المساعد الذكي', icon: <i className="fa-solid fa-robot w-6 text-center text-xl"></i> },
     { id: 'resources', label: 'مصادر تعليمية', icon: <CollectionIcon className="h-6 w-6" /> },
     { id: 'whatsapp', label: 'مجموعات الواتساب', icon: <WhatsappIcon className="h-6 w-6" /> },
     { id: 'support', label: 'الدعم الفني', icon: <SupportIcon className="h-6 w-6" /> },

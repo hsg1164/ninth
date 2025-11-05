@@ -1,6 +1,6 @@
 import { GoogleGenAI, Chat, ContentPart } from "@google/genai";
-import { schedulesByDivision } from '../data/schedule';
-import { subjectResources, whatsappResource, supportResource } from '../data/resources';
+import { schedulesByDivision } from '../data/schedule.ts';
+import { subjectResources, whatsappResource, supportResource } from '../data/resources.ts';
 
 if (!process.env.API_KEY) {
   console.warn("API_KEY environment variable not set. The application will not be able to connect to Gemini API.");

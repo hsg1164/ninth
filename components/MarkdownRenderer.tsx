@@ -1,5 +1,5 @@
 import React from 'react';
-import { ExternalLinkIcon } from './icons';
+import { ExternalLinkIcon } from './icons.tsx';
 
 interface MarkdownRendererProps {
   content: string;

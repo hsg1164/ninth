@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
-import { schedulesByDivision, dayNames, arabicDayNames, divisions, periodTimes } from '../data/schedule';
-import { ScheduleEntry } from '../types';
-import { ExternalLinkIcon } from './icons';
+import { schedulesByDivision, dayNames, arabicDayNames, divisions, periodTimes } from '../data/schedule.ts';
+import { ScheduleEntry } from '../types.ts';
+import { ExternalLinkIcon } from './icons.tsx';
 
 // Utility function to convert "HH:mm" to 12-hour format "h:mm مساءً/صباحًا"
 const convertTo12HourFormat = (time24: string | undefined): string => {

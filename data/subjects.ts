@@ -7,7 +7,7 @@ import {
     FlaskIcon, 
     BookBookmarkIcon, 
     MicrochipIcon 
-} from '../components/icons';
+} from '../components/icons.tsx';
 
 // Interface to define the structure of subject details
 export interface SubjectDetails {

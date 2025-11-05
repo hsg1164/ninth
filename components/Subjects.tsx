@@ -1,5 +1,5 @@
 import React from 'react';
-import { CalculatorIcon, GlobeIcon, LibraryIcon, QuillIcon, AtomIcon, TranslateIcon, MoonIcon, CodeIcon } from './icons';
+import { CalculatorIcon, GlobeIcon, LibraryIcon, QuillIcon, AtomIcon, TranslateIcon, MoonIcon, CodeIcon } from './icons.tsx';
 
 // Define the structure for a subject
 interface Subject {

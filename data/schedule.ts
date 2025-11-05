@@ -1,4 +1,4 @@
-import { ScheduleEntry } from '../types';
+import { ScheduleEntry } from '../types.ts';
 
 export const divisions = ['أ', 'ب', 'ج', 'د', 'هـ'];
 

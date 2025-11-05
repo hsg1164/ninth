@@ -1,9 +1,9 @@
 import React from 'react';
 import { 
   ExternalLinkIcon,
-} from './icons';
-import { subjectResources } from '../data/resources';
-import type { SubjectResources } from '../data/resources';
+} from './icons.tsx';
+import { subjectResources } from '../data/resources.ts';
+import type { SubjectResources } from '../data/resources.ts';
 
 
 // Color styling maps

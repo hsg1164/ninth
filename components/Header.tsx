@@ -1,5 +1,5 @@
 import React from 'react';
-import { MenuIcon } from './icons';
+import { MenuIcon } from './icons.tsx';
 
 interface HeaderProps {
   toggleSidebar: () => void;
@@ -18,7 +18,7 @@ const Header: React.FC<HeaderProps> = ({ toggleSidebar }) => {
               alt="شعار المدرسة" 
               className="h-9 w-9 object-contain bg-white/90 p-1 rounded-md shadow-sm"
           />
-          <h1 className="text-lg sm:text-xl font-bold text-gray-800 dark:text-white hidden sm:block">مدرسة خارجي اساسي عليا 25 ب</h1>
+          <h1 className="text-base sm:text-xl font-bold text-gray-800 dark:text-white">مدرسة خارجي اساسي عليا 25 ب</h1>
         </div>
       </div>
     </header>

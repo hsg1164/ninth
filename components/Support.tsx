@@ -1,9 +1,9 @@
 import React from 'react';
 import { 
   ExternalLinkIcon,
-} from './icons';
-import { supportResource } from '../data/resources';
-import type { LinkGroup } from '../data/resources';
+} from './icons.tsx';
+import { supportResource } from '../data/resources.ts';
+import type { LinkGroup } from '../data/resources.ts';
 
 
 // Color styling maps

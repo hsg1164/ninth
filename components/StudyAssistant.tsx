@@ -1,8 +1,8 @@
 import React, { useState, useRef, useEffect } from 'react';
-import { ChatMessage } from '../types';
-import { sendMessage } from '../services/geminiService';
-import { UserIcon, PaperclipIcon, XCircleIcon, CopyIcon, CheckIcon } from './icons';
-import MarkdownRenderer from './MarkdownRenderer';
+import { ChatMessage } from '../types.ts';
+import { sendMessage } from '../services/geminiService.ts';
+import { UserIcon, PaperclipIcon, XCircleIcon, CopyIcon, CheckIcon } from './icons.tsx';
+import MarkdownRenderer from './MarkdownRenderer.tsx';
 
 // Helper to convert file to base64
 const fileToBase64 = (file: File): Promise<{ mimeType: string; data: string }> => {

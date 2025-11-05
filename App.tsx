@@ -1,14 +1,13 @@
 import React, { useState } from 'react';
-import Sidebar from './components/Sidebar';
-import Header from './components/Header';
-import Dashboard from './components/Dashboard';
-import Schedule from './components/Schedule';
-import StudyAssistant from './components/StudyAssistant';
-import Resources from './components/Resources';
-import WhatsappGroups from './components/WhatsappGroups';
-import Support from './components/Support';
+import Sidebar from './components/Sidebar.tsx';
+import Header from './components/Header.tsx';
+import Dashboard from './components/Dashboard.tsx';
+import Schedule from './components/Schedule.tsx';
+import Resources from './components/Resources.tsx';
+import WhatsappGroups from './components/WhatsappGroups.tsx';
+import Support from './components/Support.tsx';
 
-export type View = 'dashboard' | 'schedule' | 'assistant' | 'resources' | 'whatsapp' | 'support';
+export type View = 'dashboard' | 'schedule' | 'resources' | 'whatsapp' | 'support';
 
 const App: React.FC = () => {
   const [currentView, setCurrentView] = useState<View>('dashboard');
@@ -20,8 +19,6 @@ const App: React.FC = () => {
         return <Dashboard setCurrentView={setCurrentView} />;
       case 'schedule':
         return <Schedule />;
-      case 'assistant':
-        return <StudyAssistant />;
       case 'resources':
         return <Resources />;
       case 'whatsapp':

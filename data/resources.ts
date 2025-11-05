@@ -12,7 +12,7 @@ import {
   SupportIcon,
   FacebookIcon,
   AcademicCapIcon
-} from '../components/icons';
+} from '../components/icons.tsx';
 
 // --- Resources Data (from Resources.tsx) ---
 export interface Book {

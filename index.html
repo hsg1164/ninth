@@ -78,9 +78,14 @@
   }
 }
 </script>
+<!-- Add Babel Standalone for live transpilation on static hosts like GitHub Pages -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/babel-standalone/7.24.7/babel.min.js" integrity="sha512-fec9e/64dIuD23EzR8M+3r2ssW8sJ7iNsvStgI2i2s+NcP4/7zHjquOhb-fHZvKv29z2Hq8sR/2pvyNsbh/4g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 </head>
   <body>
     <div id="root"></div>
-    <script type="module" src="./index.tsx"></script>
+    <!-- Changed script type to "text/babel" to enable transpilation.
+         Added presets for React (JSX) and TypeScript (TSX).
+         data-type="module" is crucial for ES module support. -->
+    <script type="text/babel" data-presets="react,typescript" data-type="module" src="./index.tsx"></script>
   </body>
 </html>
